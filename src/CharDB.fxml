@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="300.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Input Search">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="inputSearchComboBox" layoutX="14.0" layoutY="100.0" prefHeight="40.0" prefWidth="190.0" promptText="Select search category" />
+                        <TextField fx:id="inputSearchTextField" layoutX="204.0" layoutY="100.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter search criteria here..." />
+                        <Label fx:id="inputSearchLabel" layoutX="14.0" layoutY="83.0" text="Search by category..." />
+                        <Button layoutX="424.0" layoutY="100.0" mnemonicParsing="false" onAction="#searchClick" prefHeight="40.0" text="Search" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
